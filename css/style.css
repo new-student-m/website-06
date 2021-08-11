@@ -97,10 +97,73 @@ start of home section
   height: 100%;
 }
 .home__main-title__h1 {
-  font-size: 4.5rem;
+  font-size: calc(2.5rem + 5vw);
 }
 .home__main-title__span {
   font-size: 2.5rem;
+  
+}
+.home__main-title__span::after {
+  content: "";
+  font-size: 2.5rem;
+  animation: typing 10s infinite   ease-in-out;
+}
+@keyframes typing {
+  0% {content: "D|";}
+  2% {content: "De|";}
+  4% {content: "Dev|";}
+  6% {content: "Deve|";}
+  8% {content: "Devel|";}
+  12% {content: "Develo|";}
+  14% {content: "Develop|";}
+  16% {content: "Develope|";}
+  18% {content: "Developer|";}
+  20% {content: "Develope|";}
+  22% {content: "Develop|";}
+  24% {content: "Develo|";}
+  28% {content: "Devel|";}
+  30% {content: "Deve|";}
+  32% {content: "Dev|";}
+  34% {content: "De|";}
+  36% {content: "D|";}
+  38% {content: "|";}
+  40% {content: "D|";}
+  42% {content: "De|";}
+  44% {content: "Des|";}
+  46% {content: "Desi|";}
+  48% {content: "Desig|";}
+  50% {content: "Design|";}
+  52% {content: "Designe|";}
+  54% {content: "Designer|";}
+  56% {content: "Designe|";}
+  58% {content: "Design|";}
+  60% {content: "Desig|";}
+  62% {content: "Desi|";}
+  64% {content: "Des|";}
+  66% {content: "De|";}
+  68% {content: "D|";}
+  70% {content: "|";}
+  72% {content: "F|";}
+  74% {content: "Fr|";}
+  76% {content: "Fre|";}
+  78% {content: "Free|";}
+  80% {content: "Freel|";}
+  82% {content: "Freela|";}
+  84% {content: "Freelan|";}
+  86% {content: "Freelanc|";}
+  88% {content: "Freelance|";}
+  90% {content: "Freelancer|";}
+  91% {content: "Freelance|";}
+  92% {content: "Freelanc|";}
+  93% {content: "Freelan|";}
+  94% {content: "Freela|";}
+  95% {content: "Freel|";}
+  96% {content: "Free|";}
+  97% {content: "Fre|";}
+  98% {content: "Fr|";}
+  99% {content: "F|";}
+  100% {content: "|";}
+  
 }
 /* ------------------------------
 end of home section
@@ -292,9 +355,8 @@ start of portfolio section
 .img--specs {
   overflow: hidden;
 }
-.card--hover
-{
- box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 10%);
+.card--hover {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 10%);
 }
 .card--hover img {
   transition: all 0.5s ease-in-out;
@@ -302,8 +364,7 @@ start of portfolio section
 .card--hover:hover img {
   transform: scale(1.2);
 }
-.fs-mine
-{
+.fs-mine {
   font-size: 2.5rem;
 }
 
@@ -315,8 +376,7 @@ end of portfolio section
 start of reviews section
 -------------------------------*/
 
-#reviews
-{
+#reviews {
   background-image: url(../images/overlay-bg.jpg);
   background-size: cover;
   background-position: center center;
@@ -325,13 +385,11 @@ start of reviews section
   position: relative;
   padding: 8rem 0;
 }
-.my-carousel
-{
+.my-carousel {
   padding: 0 128px;
   text-align: center;
 }
-.my-c-btn
-{
+.my-c-btn {
   width: 10px !important;
   height: 10px !important;
   border-radius: 50%;
@@ -347,54 +405,46 @@ end of reviews section
 /* ------------------------------
 start of blog section
 -------------------------------*/
-.blog__card__body
-{
+.blog__card__body {
   position: relative;
 }
-.blog__card__link
-{
-  font-size: .7rem;
+.blog__card__link {
+  font-size: 0.7rem;
   position: absolute;
   top: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   left: 50%;
 }
-.blog__card__title
-{
+.blog__card__title {
   color: var(--primary-dark-black);
   font-size: 1.5rem;
   display: block;
   text-decoration: none;
   font-weight: 500;
-
 }
 
-.blog__card__txt
-{
-color: #4e4e4e;
-font-size: 1rem;
+.blog__card__txt {
+  color: #4e4e4e;
+  font-size: 1rem;
 }
-.blog__card__footer
-{
-  background-color: rgba(0,0,0,.03);
-  border-top: 1px solid rgba(0,0,0,.125);
+.blog__card__footer {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
   padding: 8px 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom-right-radius: .3rem;
-  border-bottom-left-radius: .3rem ;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
-.footer__img
-{
+.footer__img {
   height: 32px;
   width: 32px;
   border-radius: 50%;
   margin-right: 10px;
 }
-.footer__link
-{
+.footer__link {
   text-decoration: none;
   color: #1e1e1e;
 }
@@ -406,15 +456,13 @@ end of blog section
 /* ------------------------------
 start of form section
 -------------------------------*/
-#contact
-{
+#contact {
   padding-top: 4rem;
   margin-top: 4rem;
   background-image: url(../images/overlay-bg.jpg);
   position: relative;
 }
-.contact__overlay
-{
+.contact__overlay {
   background-color: #0078ff;
   position: absolute;
   top: 0;
@@ -424,25 +472,21 @@ start of form section
   opacity: 0.7;
   z-index: 1;
 }
-.contact__mf
-{
+.contact__mf {
   margin-top: 4rem;
   margin-bottom: 4rem;
   position: relative;
   z-index: 2;
 }
-.contact__in
-{
+.contact__in {
   background-color: #fff;
   padding: 3rem;
 }
-.contact__icons
-{
+.contact__icons {
   display: flex;
   justify-content: flex-start;
 }
-.contact__icons_circle
-{
+.contact__icons_circle {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -452,18 +496,15 @@ start of form section
   justify-content: center;
   align-items: center;
   color: #1e1e1e;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.contact__icons_circle:hover
-{
+.contact__icons_circle:hover {
   background-color: #0078ff;
   border-color: #cde1f8;
   color: white;
 }
-#end
-{
+#end {
   background-color: #0062d3;
   color: white;
-  
 }
