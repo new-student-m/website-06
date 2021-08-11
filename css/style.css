@@ -508,3 +508,11 @@ start of form section
   background-color: #0062d3;
   color: white;
 }
+/* -------------------------- */
+@media all and (max-width:768px){
+  
+  .my-carousel {
+    padding: 0 8px;
+    
+  }
+}
